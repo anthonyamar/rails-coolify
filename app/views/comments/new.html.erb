@@ -1,0 +1,11 @@
+<div>
+  <h1 class="font-bold text-4xl">Comments#new</h1>
+
+  <%= form_with model: @comment do |form| %>
+    <div>
+      <%= form.label :body %><br>
+      <%= form.text_field :body, class: "border border-gray-300 rounded-md p-2" %>
+    </div>
+    <%= form.submit "Create Comment", class: "bg-blue-500 text-white px-4 py-2 rounded-md mt-4" %>
+  <% end %>
+</div>
